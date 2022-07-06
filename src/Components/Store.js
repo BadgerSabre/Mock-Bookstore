@@ -3,11 +3,15 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import Card from 'react-bootstrap/Card'
 
 const Store = (props) => {
+    
     const displayStore = props.Inventory.map((book, i) => {
         return(
             <div key={i}>
                 <ListGroup.Item>{book.title}</ListGroup.Item>
-                <button>Add to cart</button>
+                <button onClick={() => {
+                    props.setCartContents([...props.cartContents, book])
+                    console.log(props.cartContents)
+                    }}>Add to cart</button>
             </div>
         )
     })

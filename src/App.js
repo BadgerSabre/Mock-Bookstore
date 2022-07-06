@@ -9,7 +9,11 @@ function App() {
   const [cartContents, setCartContents] = useState([])
   const [cartDisplay, setCartDisplay] = useState(false)
 
-  const display = () => cartDisplay ? <Cart cartContents={cartContents} setCartContents={setCartContents} /> : <Store cartContents={cartContents} setCartContents={setCartContents} Inventory={Inventory} />
+  function deleteItem(i) {
+    setCartContents(cartContents.filter(item => item.i !== i))
+  }
+
+  const display = () => cartDisplay ? <Cart deleteItem={deleteItem} cartContents={cartContents} setCartContents={setCartContents} /> : <Store cartContents={cartContents} setCartContents={setCartContents} Inventory={Inventory} />
 
   return (
     <div className="App">
