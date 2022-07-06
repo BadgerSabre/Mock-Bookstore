@@ -1,8 +1,11 @@
 .App {
   text-align: center;
+  background-color: #7F7B82;
+  height: 100vh;
 }
 .App h1 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: white;
   margin-top: 0;
 }
 
@@ -19,26 +22,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
-.packages {
-  width: 75%;
-  margin: 0 auto;
-  margin-top: 50px;
-  font-size: 1.3vw;
-  font-weight: bold;
-  color: white;
+#display{
+  background-color: #7F7B82;
+  margin-bottom: 0;
 }
-.packages h1 {
-  border-bottom: 6px white solid;
-  font-size: 5vh;
-}
-
-.packages ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.packages li {
-  font-size: 25px;
-  margin: 20px;
+#header{
+  background-color: #444554;
 }

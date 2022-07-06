@@ -1,23 +1,23 @@
 const Inventory = [
     {
         title: "Harry Potter",
-        price: 12.00,
-        id: 1
+        price: 12.15,
+        id: 0
     },
     {
         title: "Dune",
-        price: 15.00,
-        id: 2
+        price: 15.99,
+        id: 1
     },
     {
         title: "War and Peace",
-        price: 32.00,
-        id: 3
+        price: 32.25,
+        id: 2
     },
     {
         title: "Frankenstein",
-        price: 9.00,
-        id: 4
+        price: 9.01,
+        id: 3
     }
 ]
 
